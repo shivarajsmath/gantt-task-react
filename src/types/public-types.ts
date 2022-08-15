@@ -30,6 +30,10 @@ export interface Task {
   dependencies?: string[];
   hideChildren?: boolean;
   displayOrder?: number;
+
+  isBaselineData?:boolean;
+  startBaseline:Date;
+  endBaseline:Date;
 }
 
 export interface EventOption {
