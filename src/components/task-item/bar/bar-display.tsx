@@ -51,6 +51,8 @@ export const BarDisplay: React.FC<BarDisplayProps> = ({
   console.log("task y",y + height)
   console.log("task width", width)
   console.log("task height", 5)
+  console.log("Bar color",getBarColor())
+
 
   return (
     <g onMouseDown={onMouseDown}>
