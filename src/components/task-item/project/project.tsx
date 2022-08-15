@@ -50,6 +50,16 @@ export const Project: React.FC<TaskItemProps> = ({ task, isSelected }) => {
         fill={processColor}
       />
       <rect
+        x={baseX1}
+        width={baseX1 + baseX2}
+        y={y + height + 2}
+        height={5}
+        ry={task.barCornerRadius}
+        rx={task.barCornerRadius}
+        fill={"#FF0000"}
+        className={style.projectBackground}
+      />
+      <rect
         fill={barColor}
         x={task.x1}
         width={projectWith}
