@@ -228,6 +228,9 @@ const convertToMilestone = (
   const x1 = x - taskHeight * 0.5;
   const x2 = x + taskHeight * 0.5;
 
+  const baseX1 = x1; 
+  const baseX2 = x2;
+
   const rotatedHeight = taskHeight / 1.414;
   const styles = {
     backgroundColor: milestoneBackgroundColor,
