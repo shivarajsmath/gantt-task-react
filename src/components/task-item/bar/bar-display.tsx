@@ -48,7 +48,7 @@ export const BarDisplay: React.FC<BarDisplayProps> = ({
 
   console.log("I am inside baseline ")
   console.log("task x1", x)
-  console.log("task y",y - height)
+  console.log("task y",y + height)
   console.log("task width", width)
   console.log("task height", 5)
 
@@ -67,7 +67,7 @@ export const BarDisplay: React.FC<BarDisplayProps> = ({
       <rect
         x={x}
         width={width}
-        y={y - height}
+        y={y + height}
         height={5}
         ry={barCornerRadius}
         rx={barCornerRadius}
