@@ -38,7 +38,13 @@ export const BarDisplay: React.FC<BarDisplayProps> = ({
   const getBarColor = () => {
     return isSelected ? styles.backgroundSelectedColor : styles.backgroundColor;
   };
-
+  console.log("task x1", x)
+  console.log("task y", y)
+  console.log("task width", width)
+  console.log("task height", height)
+  console.log("progressX", progressX)
+  console.log("progressWidth", progressWidth)
+  console.log("barCornerRadius", barCornerRadius)
   return (
     <g onMouseDown={onMouseDown}>
       <rect
