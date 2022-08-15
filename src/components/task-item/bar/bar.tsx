@@ -20,6 +20,7 @@ export const Bar: React.FC<TaskItemProps> = ({
     task.height
   );
   const handleHeight = task.height - 2;
+  console.log("task details", task)
   return (
     <g className={styles.barWrapper} tabIndex={0}>
       <BarDisplay

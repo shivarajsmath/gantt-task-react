@@ -69,11 +69,11 @@ export const BarDisplay: React.FC<BarDisplayProps> = ({
       <rect
         x={x}
         width={width}
-        y={y + height}
+        y={y + height + 2}
         height={5}
         ry={barCornerRadius}
         rx={barCornerRadius}
-        fill={getBarColor()}
+        fill={#FF0000}
         className={style.barBackground}
       />
       <rect
