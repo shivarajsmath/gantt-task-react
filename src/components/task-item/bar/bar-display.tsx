@@ -66,6 +66,13 @@ export const BarDisplay: React.FC<BarDisplayProps> = ({
         rx={barCornerRadius}
         fill={getBarColor()}
         className={style.barBackground}
+        {
+          console.log("I am inside baseline ",)
+          console.log("task x1", x)
+          console.log("task y",y + height)
+          console.log("task width", width)
+          console.log("task height", 5)
+        }
       />
       <rect
         x={progressX}
