@@ -20,6 +20,13 @@ export const Bar: React.FC<TaskItemProps> = ({
     task.height
   );
   const handleHeight = task.height - 2;
+  console.log("task x1", task.x1)
+  console.log("task y", task.y)
+  console.log("task width", task.x2 - task.x1)
+  console.log("task height", task.height)
+  console.log("progressX", task.progressX)
+  console.log("progressWidth", task.progressWidth)
+  console.log("barCornerRadius", task.barCornerRadius)
   return (
     <g className={styles.barWrapper} tabIndex={0}>
       <BarDisplay
