@@ -252,6 +252,8 @@ const convertToMilestone = (
     height: rotatedHeight,
     hideChildren: undefined,
     barChildren: [],
+    baseX1,
+    baseX2,
     styles,
   };
 };
