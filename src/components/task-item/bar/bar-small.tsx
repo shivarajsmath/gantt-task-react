@@ -32,6 +32,8 @@ export const BarSmall: React.FC<TaskItemProps> = ({
         onMouseDown={e => {
           isDateChangeable && onEventStart("move", task, e);
         }}
+        baseX1 = {task.baseX1}
+        baseX2 = {task.baseX2}
       />
       <g className="handleGroup">
         {isProgressChangeable && (
