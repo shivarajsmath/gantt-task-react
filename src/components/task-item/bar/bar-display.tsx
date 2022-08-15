@@ -45,6 +45,13 @@ export const BarDisplay: React.FC<BarDisplayProps> = ({
   console.log("progressX", progressX)
   console.log("progressWidth", progressWidth)
   console.log("barCornerRadius", barCornerRadius)
+
+  console.log("I am inside baseline ")
+  console.log("task x1", x)
+  console.log("task y",y - height)
+  console.log("task width", width)
+  console.log("task height", 5)
+
   return (
     <g onMouseDown={onMouseDown}>
       <rect
@@ -60,19 +67,12 @@ export const BarDisplay: React.FC<BarDisplayProps> = ({
       <rect
         x={x}
         width={width}
-        y={y + height}
+        y={y - height}
         height={5}
         ry={barCornerRadius}
         rx={barCornerRadius}
         fill={getBarColor()}
         className={style.barBackground}
-        {
-          console.log("I am inside baseline ",)
-          console.log("task x1", x)
-          console.log("task y",y + height)
-          console.log("task width", width)
-          console.log("task height", 5)
-        }
       />
       <rect
         x={progressX}
